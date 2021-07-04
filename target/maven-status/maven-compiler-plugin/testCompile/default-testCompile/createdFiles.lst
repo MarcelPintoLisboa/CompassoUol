@@ -1,0 +1,5 @@
+pages\Util.class
+pages\Tela_inicial.class
+runner\RunnerTest.class
+steps\Tela_inicialSteps.class
+pages\Tela_carrinho.class

@@ -1,0 +1,111 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Abrir sistema",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 11517000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Abrir navegador teste",
+            "match": {
+              "location": "steps.Tela_inicialSteps.abrir_navegador_teste()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-04T14:40:07.203Z",
+        "line": 17,
+        "name": "Validar inserção do look no carrinho de compras",
+        "description": "",
+        "id": "validar-inserção-do-look-no-carrinho-de-compras;validar-inserção-do-look-no-carrinho-de-compras;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 2557000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "como comprador quero buscar um look \"Faded Short Sleeve\" no sistema",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Faded Short Sleeve\"",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.Tela_inicialSteps.como_comprador_quero_buscar_um_look_no_sistema(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 7670000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "adiciono no carrinho de compras",
+            "match": {
+              "location": "steps.Tela_inicialSteps.adiciono_no_carrinho_de_compras()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 110000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "preciso verificar se o look \"Faded Short Sleeve T-shirts\" \"$16.51\" encontra-se no carrinho de compras",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Faded Short Sleeve T-shirts\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"$16.51\"",
+                  "offset": 58
+                }
+              ],
+              "location": "steps.Tela_inicialSteps.verificar_se_o_look_está_no_carrinho_de_compras(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          }
+        ]
+      }
+    ],
+    "name": "Validar inserção do look no carrinho de compras",
+    "description": "",
+    "id": "validar-inserção-do-look-no-carrinho-de-compras",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/Projeto.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
