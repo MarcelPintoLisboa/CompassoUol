@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17579000000,
+              "duration": 21097000000,
               "status": "passed"
             },
             "line": 7,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-07-09T18:15:19.517Z",
+        "start_timestamp": "2021-07-09T18:50:52.708Z",
         "line": 17,
         "name": "Validar inserção do look no carrinho de compras",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3425000000,
+              "duration": 9986000000,
               "status": "passed"
             },
             "line": 11,
@@ -52,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 10570000000,
+              "duration": 19171000000,
               "status": "passed"
             },
             "line": 12,
@@ -64,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 191000000,
+              "duration": 5233000000,
               "status": "passed"
             },
             "line": 13,

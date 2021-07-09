@@ -1,10 +1,11 @@
 package runner;
 
+import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-
+import pages.Metodos;
 
 
 @RunWith(Cucumber.class)
@@ -20,6 +21,9 @@ import io.cucumber.junit.CucumberOptions;
  
 
 public class RunnerTest {
-
-	  }
+	@AfterClass
+	public static void fecharPagina () {
+	Metodos metodos = new Metodos();	
+		metodos.fecharBrowser();
+	}  }
 

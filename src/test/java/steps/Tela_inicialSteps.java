@@ -24,7 +24,7 @@ Metodos metodos = new Metodos();
 	@Dado("como comprador quero buscar um look {string} no sistema")
 	public void como_comprador_quero_buscar_um_look_no_sistema (String look) throws InterruptedException {
 		
-		 metodos.esperarImplicita(Tela_inicial.inp_Busca);
+		 metodos.esperarImplicita(Tela_inicial.inp_Busca,4000);
 		 metodos.escrever(Tela_inicial.inp_Busca, look);
 		 metodos.clicar(Tela_inicial.btn_Busca);
 		
@@ -34,10 +34,9 @@ Metodos metodos = new Metodos();
 	public void adiciono_no_carrinho_de_compras() throws InterruptedException {
 		Thread.sleep(2000);
 		metodos.mouseselect(Tela_inicial.slc_look);		
-		metodos.esperarImplicita(Tela_inicial.btn_Add_to_Cart);
+		metodos.esperarImplicita(Tela_inicial.btn_Add_to_Cart,4000);
 		metodos.clicar(Tela_inicial.btn_Add_to_Cart);
-
-		Thread.sleep(4000);
+		metodos.esperarImplicita(Tela_inicial.btn_Proceed_To_Checkout,5000);
 		metodos.clicar(Tela_inicial.btn_Proceed_To_Checkout);
 	  
 	}

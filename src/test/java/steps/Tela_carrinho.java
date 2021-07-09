@@ -14,7 +14,7 @@ public class Tela_carrinho{
 	@Entao("preciso verificar se o look {string} {string} encontra-se no carrinho de compras")
 	public void verificar_se_o_look_está_no_carrinho_de_compras(String ExpectedTitle, String preço_esperado ) throws InterruptedException {
 	
-	metodos.esperarImplicita(pages.Tela_carrinho.txt_Validar_look_No_Carrinho);
+	metodos.esperarImplicita(pages.Tela_carrinho.txt_Validar_look_No_Carrinho,5000);
 	metodos.ValidarElementos(ExpectedTitle,preço_esperado,pages.Tela_carrinho.txt_Validar_look_No_Carrinho,pages.Tela_carrinho.txt_Validar_Preço_look );
 	
 
